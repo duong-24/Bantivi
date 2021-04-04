@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="main">
+        <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Thành viên đăng ký tại đây</h3>
+            <p class="spacer"> Cùng nhau xây dựng ngôi nhà của bạn </p>
+
+            <div class="desc"></div>
+
+            <div class="form-group">        
+                <label for="fullname" class="form-label">Tên đầy đủ</label>
+                <input class="form-control" type="text" id="fullname" name="fullname" placeholder="VD: Anh Dương">
+                <span class="form-mesage"></span>
+            </div>
+            <div class="form-group">        
+                <label for="email" class="form-label">Email</label>
+                <input  class="form-control" type="text" id="email" name="email" placeholder="VD: email@gmail.com">
+                <span class="form-mesage"></span>
+            </div>
+            <div class="form-group">        
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input class="form-control" type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+                <span class="form-mesage"></span>
+            </div>
+            <div class="form-group">        
+                <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                <input class="form-control" type="password" id="password_confirmation" name="password_confirmation" placeholder="VD: *******">
+                <span class="form-mesage"></span>
+            </div>
+
+            <div class="form-group">        
+                <label for="province" class="form-label">Tỉnh/TP</label>
+                <select name="province" id="province" class="form-control">
+                    <option value="">-- Chọn Tỉnh/Tp --</option>
+                    <option value="hni">Hà Nội</option>
+                    <option value="hpg">Hải Phòng</option>
+                    <option value="hcm">Hồ Chí Minh</option>
+                    <option value="dn">Đà Nẵng</option>
+                </select>
+                <span class="form-mesage"></span>
+            </div>
+
+            <div class="form-group hor">        
+                <label for="password_confirmation" class="form-label">Giới tính</label>
+                <div>
+                    <input class="form-control" type="radio" value="male" name="gender">
+                    Nam
+                </div>
+                <div>
+                    <input class="form-control" type="radio" value="famale" name="gender">
+                    Nữ
+                </div>
+                <div>
+                    <input class="form-control" type="radio" value="orther" name="gender">
+                    Khác
+                </div>
+                <span class="form-mesage"></span>
+            </div>
+            <button class="form-submit">Đăng ký</button>
+        </form>
+    </div>
+</body>
+<script src="../js/login.js"></script>
+<script>
+    //Mong muốn của chúng ta
+    Validator({
+        form:'#form-1',
+        formGroupSelector:'.form-group',
+        errorSelector:'.form-mesage',
+        rules:[
+            Validator.isRequired('#fullname','Vui lòng nhập tên đầy đủ của bạn'),
+            Validator.isEmail('#email'),
+            Validator.minLength('#password',6),
+            Validator.isRequired('#password_confirmation'),
+            Validator.isRequired('input[name="gender"]'),
+            Validator.isRequired('#province'),
+            Validator.isConfirmed('#password_confirmation',function(){
+                return document.querySelector('#form-1 #password').value;
+            },'Mật khẩu nhập lại không chính xác')
+        ],
+        onSubmit:function(data){
+            console.log(data);
+            console.log(data);
+            alert("Đăng ký thành công ")
+        }
+    });
+</script>
+
+</html>

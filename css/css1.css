@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+.tongthe{
+    background:#fff;
+}
+.thanhmenu ul li a{
+    text-decoration: none;
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #000;
+    position: relative;
+    top: 20px;
+}
+.main{
+    margin-top:127px;
+}
+nav{
+    display: block;
+}
+body{
+    font-family: Open Sans;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #000;
+}
+.tieude{
+    width: 100%;
+    height:70px;
+
+}
+/********************/
+.menuchinh{
+    width: 100%;
+    height:58px;
+}
+.al>li{
+    display: inline-block;
+    padding: 0 30px 0 0;
+    margin-top: 20px;
+    padding-left: 40px;
+
+}
+.menuchinh ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menuchinh ul li{
+    font-weight: 700;
+    font-size:16px;
+}
+.dropdown-menu{
+    margin-top:17px;
+    border-top: none;
+}
+.dropdown-menu>li{
+    margin-left:20px;
+    padding-top: 10px;
+}
+.al{
+    float: left;
+}
+.input{
+    float: right;
+}
+
+.input #searchbox, .giohang,.dangnhap{
+    display: inline-block;
+    margin-top: -10px;
+    padding-left: 10px;
+}
+.input .input-group-addon{
+    height: 57px;
+    background-color: #fff;
+}
+input[type=search] {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+.tieude img{
+    max-height: 90px;
+    max-width: 100%;
+    vertical-align: middle;
+    border:0;
+}
+.tieude{
+    text-align: center;
+    margin-top: 5px;
+}
+.input-group-addon{
+    color: #555;
+    border: 1px solid #ccc;
+    display: inline;
+    height: 36px;
+    line-height: 36px;
+    background: #fafafa;
+    border-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+    font-weight: 400;
+    outline: none;
+}
+form content #searchbox{
+    position: absolute;
+}
+.giohang a{
+        color: #000;
+        text-decoration: none;
+}
+.giohang a{
+    display:block;
+}
+.giohang{
+
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    border-right: 1px solid #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 10px;
+    position: relative;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.giohang a span{
+    color: rgb(87, 85, 85);
+    font-size: 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 8px;
+    -webkit-transition: color .3s cubic-bezier(.25,.46,.45,.94);
+    transition: color .3s cubic-bezier(.25,.46,.45,.94);
+}
+.giohang a i{
+    clear: both;
+   
+}
+.dangnhap a{
+    color: #000;
+    text-decoration: none;
+    padding-left: 10px;
+    color: rgb(87, 85, 85);
+    font-size: 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 8px;
+    -webkit-transition: color .3s cubic-bezier(.25,.46,.45,.94);
+    transition: color .3s cubic-bezier(.25,.46,.45,.94);
+}
+.input .dangnhap a:hover{
+    color:rgb(9, 2, 26);
+}
+/*************************/
+.quangcao{
+    width: 100%;
+    height:669px;
+}
+.bf::before{
+    content: "";
+    clear: both;
+}
+.at::after{
+    content: "";
+    clear: both;
+}
+/*************************/
+.sanpham{
+    max-width: 1200px;
+    width: 100%;
+    height:2591.980px;
+    background-color: rgb(170, 43, 143);
+    margin: 0 auto;
+    background: none repeat scroll 0% 0% #fff;
+    overflow: visible;
+}
+/*************************/
+.noidung-sanpham{
+    width: 100%;
+    height:2371.980px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.bf1::before{
+    display: table;
+    content: " ";
+}
+.at1::after{
+    clear: both;
+}
+h1{
+    color:#3f4b56;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom:15px;
+    margin-top: 0;
+    text-transform: uppercase;
+    margin: .67em 0;
+}
+.product-title span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    color: #f25720;
+}
+.product-title {
+    text-align: center;
+}
+/**********************/
+
+
+.row .col{
+    margin-top: 5px;
+    border: 1px solid rgb(161, 160, 160);
+    border-radius: 5px;
+    margin-left: 2px;
+}
+.tragop{
+    display: flex;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 5px;
+    
+}
+.tragop .tragop0{
+    background-color: #fbda03;
+    color: #333;
+    border-color: #fbda03;
+    margin-right: 4px;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.banchay{
+    background-color: #fff;
+    color: #eb5757;
+    border-color: #eb5757;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.banchay-anh{
+    position: relative;
+    line-height: 0;
+    display: block;
+}
+.anh1{
+    display: flex;
+    margin: 15px 0;
+}
+.anh1-img{
+    height: unset;
+    max-height: 287px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noidung1{
+    margin-top:5px;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: 61px;
+    margin: 0;
+    margin-right: 3px;
+    width: 100%;
+    font-size: 14px;
+    font-style: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+    line-height: 1.4em;
+}
+.noidung-sanpham a {
+    text-decoration: none;
+    color: #288ad6;
+}
+.noidung2{
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+.noidung2 span{
+    margin-right: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    display: inline-block;
+}
+.noidung3{
+    margin-top: 5px;
+}
+.noidung3 .strong1{
+    color: #d12c1f;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+.noidung3 .strong2{
+    color: #333;
+    display: inline-block;
+    text-decoration: line-through;
+    margin-top: 5px;
+    font-weight: normal;
+}
+.noidung4{
+    margin-top: 6px;
+    font-size: 12px;
+    padding: 12px 25px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+    position: relative;
+    left: 30%;
+    margin-bottom: 5px;
+}
+.noidung4:hover{
+    border: 1px solid #333;
+     background-color: #fff;
+    color: #000;
+}
+/************/
+
