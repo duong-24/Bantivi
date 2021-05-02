@@ -1,0 +1,94 @@
+.bf::before{
+    display:table;
+    clear:both;
+    content:'';
+}
+.container-topp{
+    width:100%;
+    padding:10px;
+}
+
+.container.container1{
+    background-color: white;
+}
+.container1{
+    position:relative;
+    margin-top:8.5%;
+}
+.content-left{
+    float:left;
+    width:35%;
+    padding:10px;
+}
+.content-left img{
+    width:100%;
+    padding-top: 10px;
+}
+.content-right{
+    float: right;
+    width:63%;
+}
+.content-right h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.content-right .p{
+    color: red;
+    font-size:23px;
+    font-weight: 600;
+}
+.pro-short-desc{
+    font-size: 15px;
+}
+.input1{
+    margin-bottom:20px;
+}
+.input1 p{
+    font-size:20px;
+}
+.input1 input{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.footer-1{
+    margin-top: 0px;
+}
+.input1 .dautru,.daucong{
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+} 
+.button-chinh{
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid rgb(116, 108, 108);
+    background-color: rgb(236, 68, 68);
+    font-size:20px;
+    color:white;
+    border-radius: 5px;
+}
+.button-chinh:hover{
+    background-color:rgb(168, 161, 161);
+    color:red;
+}
+.card-header a{
+    color: black;
+    font-size:18px;
+    color: rgb(36, 106, 128);
+    font-weight: 600;
+
+}
+.card-header{
+    border:none;
+    color: black;
+}
+.card{
+    background-color:white;
+    border: none;
+    padding-bottom:5px;
+}

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <title>Document</title>
 <link rel="stylesheet" href="./css/css1.css">
 <link rel="stylesheet" href="./css/reponsize.css">
@@ -22,7 +22,7 @@
             <img src="./img/logo.jpg" alt="">
         </div>
         <nav class="navbar navbar-expand-xl navbar-dark  fixed-top" id="a33">
-        <a class="navbar-brand" href="#">Trang chủ</a>
+        <a class="navbar-brand" href="/">Trang chủ</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +41,6 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownXL">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
@@ -135,8 +134,21 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
+                                    
                                 </div>
                             </div>
                             <!--------------------------------------------------------------------------------------------------------------------->
@@ -148,43 +160,47 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal"
-                                                style="background-color: red; margin-right: 10px; color: black; text-align: left;">&times;</button>
-                                            <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+                                                style="background-color: red; height: 50px; margin-right: 0x; color: black; text-align: left;">&times;</button>
                                         </div>
                                         <div class="modal-body">
                                             <form role="form">
-                                                <div class="form-group">
-                                                    <label for="psw"><span
-                                                            class="glyphicon glyphicon-shopping-cart"></span> Tickets,
-                                                        $23 per person</label>
-                                                    <input type="number" class="form-control" id="psw"
-                                                        placeholder="How many?">
+                                                <div class="form-group form-left">
+                                                    <div>
+                                                        <img src="./img/anh2.jpg" width=300px; height=300px; alt="">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span>
-                                                        Send To</label>
-                                                    <input type="text" class="form-control" id="usrname"
-                                                        placeholder="Enter email">
-                                                </div>
-                                                <button type="submit" class="btn btn-block"
-                                                    style="background-color: rgb(238, 247, 247); color: rgb(231, 36, 36);">Mua
-                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-danger btn-default pull-left"
-                                                data-dismiss="modal">
-                                                <span class="glyphicon glyphicon-remove"></span> Cancel
+                                                <div class="form-right">
+                                                    <div class="form-group">
+                                                        <h1>Tivi Giá siêu ưu đãi</h1>
+                                                        <p>Trạng thái: <span>Còn hàng</span></p>
+                                                        <p>890,000 đ</p>
+                                                        <hr>
+                                                        <p><b>Hãng sản xuất:Nhật Bản</b></p>
+                                                        <p><b>Mã Sản phẩm:123</b></p>
+                                                        <hr>
+                                                        <p><b>Màu sắc: <select name="" id="">
+                                                            <option value="">Đỏ</option>
+                                                            <option value="">Vàng</option>
+                                                            <option value="">Đen</option>
+                                                        </select></b></p>
+                                                        <p>Số lượng <input type="text" value="1"></p>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-block"
+                                                style="background-color: rgb(238, 247, 247); color: rgb(231, 36, 36);">Thêm vào giỏ hàng
+                                                <span class="glyphicon glyphicon-ok"></span>
                                             </button>
-                                            <p>Need <a href="#">help?</a></p>
+                                                </div>
+                                        
+                                            </form>
+                                            
                                         </div>
+                                       
                                     </div>
                                 </div>
                             </div>
                             <!--------------------------------------------------------------------------------------------------------------------->
                             <div class="col">
-                                <div class="col-noidung" style="color: #333;">
+                                <div class="col-noidung" style="color: rgb(173, 56, 56);">
                                     <div class="tragop">
                                         <div class="tragop0">
                                             Trả góp <b style="color: #333;">0%</b>
@@ -212,8 +228,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                   <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                    <div class="variants form-nut-grid margin-bottom-0">
+                                        <button type="button" class="btn btn-cart btn-primary left-to"
+                                        data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                        <a class="btn-gray btn_view btn right-to quick-view" 
+                                        data-psid="14432361" href="">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -245,8 +273,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                   <!--hien gio hang va chi tiet-->
+                                   <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                    <div class="variants form-nut-grid margin-bottom-0">
+                                        <button type="button" class="btn btn-cart btn-primary left-to"
+                                        data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                        <a class="btn-gray btn_view btn right-to quick-view" 
+                                        data-psid="14432361" href="">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -278,8 +318,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                         </div>
@@ -316,8 +368,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -349,8 +413,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -382,8 +458,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -415,8 +503,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                         </div>
@@ -456,8 +556,21 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
+                                    
                                 </div>
                             </div>
                             <div class="col">
@@ -471,7 +584,7 @@
                                     <a href="" class="banchay-anh">
                                         <div class="anh1">
                                             <div class="anh1-img">
-                                                <img src="./img/anh2.jpg" alt="./" width="200" height="150"
+                                                <img src="./img/anh1.jpg" alt="" width="200" height="150"
                                                     loading="lazy">
                                             </div>
                                         </div>
@@ -489,8 +602,21 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
+                                    
                                 </div>
                             </div>
                             <div class="col">
@@ -522,8 +648,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -555,8 +693,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                         </div>
@@ -593,8 +743,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -626,8 +788,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -659,8 +833,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -692,8 +878,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                         </div>
@@ -730,8 +928,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -763,8 +973,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -796,8 +1018,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                   <!--hien gio hang va chi tiet-->
+                                   <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                    <div class="variants form-nut-grid margin-bottom-0">
+                                        <button type="button" class="btn btn-cart btn-primary left-to"
+                                        data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                        <a class="btn-gray btn_view btn right-to quick-view" 
+                                        data-psid="14432361" href="">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                             <div class="col">
@@ -829,8 +1063,20 @@
                                             <strong class="strong2">11.400.000đ</strong>
                                         </div>
                                     </a>
-                                    <button class="btn noidung4" data-toggle="modal" data-target="#myModal">Mua
-                                        hàng</button>
+                                    <!--hien gio hang va chi tiet-->
+                                    <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                        <div class="variants form-nut-grid margin-bottom-0">
+                                            <button type="button" class="btn btn-cart btn-primary left-to"
+                                            data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng" onclick="">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <a class="btn-gray btn_view btn right-to quick-view" 
+                                            data-psid="14432361" href="">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!----------------------------ddieemr ket noi-->
                                 </div>
                             </div>
                         </div>
@@ -839,119 +1085,57 @@
             </div>
         </div>
     </div>
-    <footer class="footer1">
+    <footer class="footer-1">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-xl-6">
-                    <div class="noidungbia">
-                        <div class="noidung11 text-uppercase">
-                            <p>Công ty TNHH TV Việt Nam</p>
-                        </div>
-                        <div class="d-flex">
-                            <div class="d-inline-block">
-                                <p><b>Trụ sở chính:</b></p>
-                                <p>12 Nguyễn Văn Bảo, Phường 5 quận Gò Vấp,<br> Thành phố Hồ Chí Minh, Việt Nam <br>
-                                    Tel:024 721545 454
-                                </p>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-1-link">
+                        <div class="row">
+                            <div class="bf"></div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-lg-45">
+                                <div class="inner">
+                                    <h4>Giới thiệu chung</h4>
+                                    <ul>
+                                            <li><a class="ef" href="/">Trang chủ</a></li>
+                                            <li><a class="ef" href="/">Sản phẩm</a></li>
+                                            <li><a class="ef" href="/">Tin tức</a></li>
+                                            <li><a class="ef" href="/lien-he" target="_blank" rel="noreferrer noopener">Liên hệ</a></li>
+                                            <li><a class="ef" href="/">Về chúng tôi</a></li>
+                                        </ul>
+                                    </div>
                             </div>
-                            <div class="d-inline-block" style="margin-left: 50px;">
-                                <p><b>Văn phòng đại diện:</b></p>
-                                <p>
-                                    Tầng 13, tòa nhà V, Phòng 3
-                                    <br>12 Nguyễn Văn Bảo, Phường 5 quận Gò Vấp
-                                    <br>Tel: 024 73000 916
-                                </p>
-                            </div>
-                        </div>
-                        <div style="margin-top:30px;">
-                            <b>Đăng ký kinh doanh</b>
-
-                            số 2300882123 cấp ngày 19/07/2019 bởi Sở Kế hoạch đầu tư thành phố HCM
-                        </div>
-                    </div>
-                    <div class="d-flex footer__contact">
-                        <div class="footer_hotline">
-                            <div class="d-inline-block">
-                                <a href="">
-                                    <img src="./img/hotline.png" alt="">
-                                </a>
-                            </div>
-                            <div class="d-inline-block ">
-                                <b><a href="tel:18000088818">1800 888 818</a></b>
-                                <p class="d-none d-md-block">
-                                    Giờ làm việc: 8:00-20:00
-                                </p>
-                                <p class="d-none d-md-block noi">
-                                    Thứ Hai - Thủ Nhật
-                                </p>
-                                <p class="d-none d-md-block">
-                                    Hỗ trợ cứu hộ 24/7: <br>
-                                    <a href="tel:18000088818">1800 888 818</a></b>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="footer__test-driver">
-                            <a href="">
-                                <div class="d-inline-block">
-                                    <img src="./img/dungthu.png" alt="">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-lg-15">
+                                <div class="inner">
+                                    <h4>Thông tin hữu ích</h4>
+                                    <ul>
+                                        <li><a class="ef" href="/">Trang chủ</a></li>
+                                        <li><a class="ef" href="/">Sản phẩm</a></li>
+                                        <li><a class="ef" href="/">Tin tức</a></li>
+                                        <li><a class="ef" href="/lien-he" target="_blank" rel="noreferrer noopener">Liên hệ</a></li>
+                                        <li><a class="ef" href="/">Về chúng tôi</a></li>
+                                    </ul>
                                 </div>
-                                <div class="d-inline-block">
-                                    <b>ĐĂNG KÝ DÙNG THỬ</b>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-41 col-xs-6">
-                    <div class="d-none d-md-block">
-                        <div class="footer__title text-uppercase">
-                            <b>Đăng ký nhận tin</b>
-                        </div>
-                        <div class="mb15 f14">
-                            Nhập email của bạn để nhận được những thông tin mới nhất.
-                        </div>
-                        <div class="form-subscription">
-                            <div role="form"  class="wpcf7">
-                                <div class="screen-reader-response" aria-live="polite">
-                                </div>
-                                <form action="" class="wpcf7-form" novalidate="novalidate">
-                                    <p><span class="wpcf7-form-control-wrap email">
-                                        <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" 
-                                        aria-required="true" aria-invalid="false" placeholder="Nhập email của bạn">
-                                    </span></p>
-                                </form>
                             </div>
-                        </div>
-                    </div>
-                    <div class="footer__menu d-flex">
-                        <div class="col-28 col-xs-4">
-                            <ul>
-                                <li><a href="#/"><b>Sản phẩm</b></a></li>
-                                <li><a href="">MG HS</a></li>
-                                <li><a href="">MG ZS</a></li>
-                                <li><a href="">MG ZS</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-28 col-xs-4">
-                            <ul>
-                                <li><a href="#/"><b>Sản phẩm</b></a></li>
-                                <li><a href="">MG HS</a></li>
-                                <li><a href="">MG ZS</a></li>
-                                <li><a href="">MG ZS</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-28 col-xs-4">
-                            <ul>
-                                <li><a href="#/"><b>Sản phẩm</b></a></li>
-                                <li><a href="">MG HS</a></li>
-                                <li><a href="">MG ZS</a></li>
-                                <li><a href="">MG ZS</a></li>
-                            </ul>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <h4>Giờ mở cửa</h4>
+                                    <ul class="margin-bottom-15">
+                                    <li><span class="block_fonticon"><i class="fa fa-phone"></i> <a class="hai01" href="tel:19002812">19002812</a></span></li>
+                                    <li><span>+ Từ thứ 2 - Chủ nhật</span></li><li><span>+ Chủ nhật: 8h - 17h</span></li>
+                                </ul>
+                    
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <h4 class="margin-0">Trụ sở chính</h4>
+                                    <span>Số 16 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Tp.HCM</span> 
+                            </div>
+                            <div class="at"></div>
                         </div>
 
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
     </footer>
     <footer class="text-center footer2 fixed-bottom">

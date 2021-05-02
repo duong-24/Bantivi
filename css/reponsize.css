@@ -16,9 +16,10 @@
     .row .col{
         width:50% ;
     }
-    .footer1{
-        bottom: 0;
-    }/*
+    .noidung-sanpham{
+        
+    }
+    /*
     .carousel-item
     {
         height: 450px;
@@ -59,7 +60,7 @@
       display: block;
     }
 }
-@media screen and (max-width:575px){
+@media screen and (max-width:576px){
     .carousel-item
     {
         width: 100%;
@@ -71,8 +72,11 @@
         height: 340px;
         margin-top: -17px;
     }
+    .footer-1{
+        margin-bottom: 90px;
+     }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .carousel-item
     {
         width: 100%;
@@ -84,8 +88,11 @@
         height: 340px;
         margin-top: -17px;
     }
+    .footer-1{
+        margin-bottom: 90px;
+     }
 }
-@media screen and (max-width:991px){
+@media screen and (max-width:992px){
     .carousel-item
     {
         width: 100%;
@@ -93,8 +100,37 @@
          background-repeat:no-repeat;
          background-size: contain;
     }
+    .footer-1{
+        margin-bottom: 90px;
+     }
+    .noidungbia{
+        width: 50%;
+    }
     .quangcao{
         height: 520px;
         margin-top: -17px;
     }
 }
+@media (min-width:1200px)
+{
+  
+    .col-lg-12 {
+        width: 100%;
+        float: left;
+    }
+}
+@media (min-width:992px)
+{
+    .col-md-12 {
+        width: 100%;
+        float: left;
+    }
+
+}
+@media (min-width:768px)
+{
+    .col-md-12 {
+        width: 100%;
+        float: left;
+    }
+}/******************************/

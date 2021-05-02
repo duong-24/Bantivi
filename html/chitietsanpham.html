@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanPham</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css1.css">
+    <link rel="stylesheet" href="../css/reponsize.css">
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <script src="../js/js1.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="chinh">
+        <div class="tieude fixed-top">
+            <img src="../img/logo.jpg" alt="">
+        </div>
+        <nav class="navbar navbar-expand-xl navbar-dark  fixed-top" id="a33">
+            <a class="navbar-brand" href="../index.html">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL"
+                aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Samsung <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tivi Cao cấp</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownXL" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tivi trả góp 0-1%
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="input">
+                    <form action="" method="get" id="searchbox"></form>
+                    <input type="search" class="input-group-addon" placeholder="Tìm kiếm ..." autocapitalize="off">
+                    <i class="fas fa-search"></i>
+                    </form>
+                    <div class="giohang">
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-title">Giỏ hàng</span>
+                        </a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="../html/dangnhap.html">Đăng nhập</a>
+                        <a href="../html/dangky.html">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="bf"></div>
+    <div class="container container1">
+        <div class="container-topp">
+            <div class="content-left">
+                <img src="../img/anh2.jpg" alt="">
+            </div>
+            <div class="content-right">
+                <h1>Sony Android TV KD-43X7500H</h1>
+                <p class="p">17,500,000₫</p>
+                <div class="pro-short-desc">
+                    <p>Thông số kỹ thuật<br>
+                        Hệ Điều Hành: Windows 10 Home<br>
+                        Processor / Chipset: Intel® Core™ i5 Processor 6200U (2.30 GHz up to 2.80GHz 3 MB L3
+                        Cache)<br>
+                        Graphic: Intel® HD Graphics 520<br>
+                        Hiển Thị:13.3" FHD LED Display (1920 x 1080)<br>
+                        Bộ nhớ:8GB LPDDR3 Memory at 1866MHz (on BD 8GB)<br>
+                        Hard Drive: None 128GB Solid-state drive<br>
+                        Màu sắc: Iron<br>
+                        Nguồn điện: 30Wh<br>
+                        40W AC Adapter<br>
+                        Dimension (W x D x H): 313.8 x 218.5 x 13.4mm (12.35" x 8.60" x 0.53")<br>
+                        Trọng lượng: 0.86 kg (1.90 lbs)</p>
+                </div>
+                <div class="input1">
+                    <p><b>Số lượng</b></p>
+                    <form action="">
+                        <button class="dautru" onclick="buttononclick1()">-</button>
+                        <input type="text" id="values1" value="1">
+                        <button class="daucong" onclick="buttononclick()">+</button>
+                        <button type="button" class="button-chinh">MUA NGAY</button>
+                        <button type="button" class="button-chinh">THÊM VÀO GIỎ HÀNG</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bf"></div>
+        <div class="container-cententt">
+            <div class="card" id="accordion">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        NỘI DUNG
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        ĐANG CẬP NHẬT THÔNG TIN
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        BÌNH LUẬN
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        KHÔNG CÓ NÌNH LUẬN
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-bottomm">
+        </div>
+    </div>
+    <div class="bf"></div>
+    <footer class="footer-1 ">
+        <div class="container ">
+            <div class="container " style="margin-top:-30px;">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-1-link">
+                            <div class="row">
+                                <div class="bf"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-lg-45">
+                                    <div class="inner">
+                                        <h4>Giới thiệu chung</h4>
+                                        <ul>
+                                            <li><a class="ef" href="/">Trang chủ</a></li>
+                                            <li><a class="ef" href="/">Sản phẩm</a></li>
+                                            <li><a class="ef" href="/">Tin tức</a></li>
+                                            <li><a class="ef" href="/lien-he" target="_blank"
+                                                    rel="noreferrer noopener">Liên hệ</a></li>
+                                            <li><a class="ef" href="/">Về chúng tôi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-lg-15">
+                                    <div class="inner">
+                                        <h4>Thông tin hữu ích</h4>
+                                        <ul>
+                                            <li><a class="ef" href="/">Trang chủ</a></li>
+                                            <li><a class="ef" href="/">Sản phẩm</a></li>
+                                            <li><a class="ef" href="/">Tin tức</a></li>
+                                            <li><a class="ef" href="/lien-he" target="_blank"
+                                                    rel="noreferrer noopener">Liên hệ</a></li>
+                                            <li><a class="ef" href="/">Về chúng tôi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="inner">
+                                        <h4>Giờ mở cửa</h4>
+                                        <ul class="margin-bottom-15">
+                                            <li><span class="block_fonticon"><i class="fa fa-phone"></i> <a
+                                                        class="hai01" href="tel:19002812">19002812</a></span></li>
+                                            <li><span>+ Từ thứ 2 - Chủ nhật</span></li>
+                                            <li><span>+ Chủ nhật: 8h - 17h</span></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <h4 class="margin-0">Trụ sở chính</h4>
+                                    <span>Số 16 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Tp.HCM</span>
+                                </div>
+                                <div class="at"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <footer class="text-center footer2 fixed-bottom">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <i class="fas fa-arrow-up"></i>
+        </a><br><br>
+        <p>Cảm ơn ví khách đã xem <a href="" data-toggle="tooltip" title="Dương">Mai Anh Dương</a></p>
+    </footer>
+</body>
+<script>
+    $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+
+</html>
