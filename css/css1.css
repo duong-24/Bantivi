@@ -111,7 +111,7 @@ body{
     color: #000;
 }
 .navbar-dark .navbar-nav .nav-item{
-    margin-left: 50px;
+    padding:5px 30px 5px 30px;
 }
 .navbar-dark .navbar-brand:hover{
     color:#ff9f00;
@@ -143,9 +143,11 @@ body{
     font-size:16px;
 }
 .dropdown-menu{
-    margin-top:18px;
+    margin-top:14px;
     border-top: none;
+    border-radius: none;
     width:200px;
+    margin-left: 20px;
 }
 .dropdown-menu a{
     padding:10px;
@@ -610,13 +612,32 @@ input[type=email] {
     width:880px;
     height:538.250px;
     left:-30%;
+    position: relative;
 }
 .form-left img{
     margin-bottom: 300px;
-    border: 1px solid rgb(151, 146, 146);
-    padding: 3px;
+    padding: 10px;
+    border:1px solid rgb(206, 199, 199);
+    border-radius:10%;
+}
+.khung-img-giohang{
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 40%);
 }
 .form-right input{
     width: 30px;
     text-align:center;
+}
+button.btn.btn-block{
+    color:white;
+    background-color:rgb(211, 106, 106);
+}
+
+button.btn.btn-block:hover{
+    background-color:red;
+}
+.congthem{
+    border: 1px solid black;
+    padding:7px;
 }

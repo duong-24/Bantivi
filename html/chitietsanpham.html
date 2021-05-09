@@ -63,6 +63,7 @@
                         <a href="">
                             <i class="fas fa-shopping-cart"></i>
                             <span class="cart-title">Giỏ hàng</span>
+                            <span class="congthem" id="congthem" value="0">0</span>
                         </a>
                     </div>
                     <div class="dangnhap">
@@ -102,9 +103,9 @@
                     <form action="">
                         <button class="dautru" onclick="buttononclick1()">-</button>
                         <input type="text" id="values1" value="1">
-                        <button class="daucong" onclick="buttononclick()">+</button>
-                        <button type="button" class="button-chinh">MUA NGAY</button>
-                        <button type="button" class="button-chinh">THÊM VÀO GIỎ HÀNG</button>
+                        <button class="daucong" onclick="buttononclick()">+</button><br>
+                        <button type="button" class="button-chinh  left-to" data-toggle="modal" data-target="#myModal" title="Thêm giỏ hàng">MUA NGAY</button>
+                        <button type="button" class="button-chinh" onclick="giohang()">THÊM VÀO GIỎ HÀNG</button>
                     </form>
                 </div>
             </div>
@@ -205,6 +206,54 @@
         </a><br><br>
         <p>Cảm ơn ví khách đã xem <a href="" data-toggle="tooltip" title="Dương">Mai Anh Dương</a></p>
     </footer>
+    <!--------------------------------------------------------------------------------------------------------------------->
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                style="background-color: red; height: 50px; margin-right: 0x; color: black; text-align: left;">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                    
+                                                <div class="form-group form-left">
+                                                    <div class="khung-img-giohang">
+                                                        <img src="../img/anh2.jpg" width=300px; height=300px; alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-right">
+                                                    <div class="form-group">
+                                                        <h1>Tivi Giá siêu ưu đãi</h1>
+                                                        <p>Trạng thái: <span>Còn hàng</span></p>
+                                                        <p>890,000 đ</p>
+                                                        <hr>
+                                                        <p><b>Hãng sản xuất:Nhật Bản</b></p>
+                                                        <p><b>Mã Sản phẩm:123</b></p>
+                                                        <hr>
+                                                        <p><b>Màu sắc: <select name="" id="">
+                                                            <option value="">Đỏ</option>
+                                                            <option value="">Vàng</option>
+                                                            <option value="">Đen</option>
+                                                        </select></b></p>
+                                                        <p>Số lượng <input type="text" value="1"></p>
+                                                    </div>
+                                                    <button type="submit" id="thanhcong" onclick="thanhcong()" class="btn btn-block"
+                                                >MUA
+                                                <span class="glyphicon glyphicon-ok"></span>
+                                            </button>
+                                                </div>
+                                        
+                                
+                                            
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------------------------------------------------------------------------------------------------------------->
 </body>
 <script>
     $(document).ready(function () {

@@ -16,17 +16,6 @@
     .row .col{
         width:50% ;
     }
-    .noidung-sanpham{
-        
-    }
-    /*
-    .carousel-item
-    {
-        height: 450px;
-    }
-    .quangcao{
-        height: 500px;
-    }*/
 @media (min-width:768px){
     .row .col{
         width:20% ;
@@ -133,4 +122,14 @@
         width: 100%;
         float: left;
     }
-}/******************************/
+}
+/********************Chi tieet san pham**********/
+@media only screen and (min-width:576px){
+    .container1 {
+        top: 85px;
+        margin-bottom: 85px;
+    }
+    .footer-1 {
+        margin-top:100px;
+    }
+}
