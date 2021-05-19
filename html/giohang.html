@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title>Thông tin giở hàng</title>
+<link rel="stylesheet" href="../css/css1.css">
+<link rel="stylesheet" href="../css/giohang.css">
+<link rel="stylesheet" href="../css/reponsize.css">
+<link rel="stylesheet" href="../css/active.css">
+<script src="../js/js1.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="chinh">
+        <div class="tieude fixed-top">
+            <img src="../img/logo.jpg" alt="">
+        </div>
+        <nav class="navbar navbar-expand-xl navbar-dark  fixed-top" id="a33">
+            <a class="navbar-brand" href="../index.html">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL"
+                aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Samsung <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tivi Cao cấp</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownXL" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tivi trả góp 0-1%
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownXL">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="input">
+                    <form action="" method="get" id="searchbox"></form>
+                    <input type="search" class="input-group-addon" placeholder="Tìm kiếm ..." autocapitalize="off">
+                    <i class="fas fa-search"></i>
+                    </form>
+                    <div class="giohang">
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-title">Giỏ hàng</span>
+                            <span class="congthem" id="congthem" value="0">0</span>
+                        </a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="../html/dangnhap.html">Đăng nhập</a>
+                        <a href="../html/dangky.html">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="noidung-giohang container">
+        <div class="vien-giohang">
+            <h2>GIỎ HÀNG</h2>
+            <p class="noidung-p">
+                KHÔNG CÓ SẢN PHẨM NÀO TRONG GIỎ HÀNG CỦA BẠN
+            </p>
+            <P>Tiếp tục mua sắm <a href="../index.html">tại đây.</a></P>
+        </div>
+    </div>
+    <footer class="text-center footer2 fixed-bottom">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <i class="fas fa-arrow-up"></i>
+        </a><br><br>
+        <p>Cảm ơn ví khách đã xem <a href="" data-toggle="tooltip" title="Dương">Mai Anh Dương</a></p>
+    </footer>
+</body>
+<script>
+    $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+<script src="./js/js1.js"></script>
+
+</html>

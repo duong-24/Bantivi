@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.noidung-giohang{
+    color:black;
+    margin-top: 200px;
+}
+.noidung-giohang p{
+    text-align: center;
+    margin: 0 0 9px;
+}
+.noidung-giohang h2{
+    margin: 0;
+    line-height: 50px;
+    font-size: 27px;
+}
+.noidung-giohang .noidung-p
+{
+    font-size: 15px;
+    padding: 15px;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+    border-radius: 0;
+}
